@@ -1,0 +1,10 @@
+<h3>Follow User</h3>
+<% if  @users.present? %>
+  <% @users.each do |user| %>
+    <p>
+      <%= "Name: #{user.name} " %>
+    </p>
+  <% end %>
+<% else %>
+  まだフォローしていません
+<% end %>
