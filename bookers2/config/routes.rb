@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get '/search' => "searchs#search
-  "
+  get '/search' => "searchs#search"
   post 'follow/:id' => 'relationships#follow', as: 'follow'
   post 'unfollow/:id' => 'relationships#unfollow', as: 'unfollow'
   get 'follower/:id' => 'relationships#follower', as: 'follower'
